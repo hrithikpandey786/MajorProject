@@ -6,7 +6,7 @@ import TableData from "./TableData.js"
 function App() {
   const [studentData, setStudentData] = React.useState([{
     name: "Hrithik",
-    rollNo: "2022073031",
+    rollNo: 2022073031,
     address: "Prayagraj",
     status: "Requested"
   },
