@@ -25,7 +25,7 @@ export default function AdminDashboard(){
     return (
         <>
             <img src={headerpic} className='image6' alt="header"/>
-      <div className="mid-section">
+      <div className="admin-dash-mid-section">
         <h3 className="title">ADMIN DASHBOARD</h3>
         <table>
           <thead>

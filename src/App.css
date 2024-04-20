@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* image 6 */
 *{
   margin: 0;
@@ -13,19 +15,24 @@
 .title{
   font-family: Inter;
   font-size: 27px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32.68px;
   text-align: center;
   margin: 25px;
 }
 
-.mid-section{
+#studentReqText{
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+.admin-dash-mid-section{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-table{
+.admin-dash-mid-section table{
   width: 1247px;
   margin-left: 209px;
   border-spacing: 0;
@@ -36,12 +43,12 @@ table{
   overflow: hidden; /* Needed to hide the overflow of rounded corners */
 }
 
-thead{
+.admin-dash-mid-section thead{
   height: 91px;
   top: 2390px;
 }
 
-td, th{
+.admin-dash-mid-section th, td{
   height: 90px;
   font-family: Inter;
   font-weight: bold;
@@ -52,7 +59,11 @@ td, th{
   padding-left: 10px;
 }
 
-th{
+.admin-dash-mid-section td{
+  font-weight: 500;
+}
+
+.admin-dash-mid-section th{
   background: #F5C4C4;
   /* border-top: none; */
   /* display: inline-block; */
@@ -60,12 +71,12 @@ th{
   overflow: hidden;
 }
 
-th:first-child{
+.admin-dash-mid-section th:first-child{
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
 }
 
-th:last-child{
+.admin-dash-mid-section th:last-child{
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }

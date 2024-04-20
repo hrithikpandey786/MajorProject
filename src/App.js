@@ -3,7 +3,7 @@ import {Routes, Route} from "react-router-dom";
 // import './App.css';
 // import headerpic from "./image6.png"
 // import TableData from "./TableData.js"
-import About from "./About"
+import StudentReqPage from "./StudentRequestPage"
 import AdminDashboard from "./AdminDashboard";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
 
     <div className="App">
       <Routes>
-      <Route path="/" element={<About/>}/>
+      <Route path="/" element={<StudentReqPage/>}/>
       <Route path="/admin" element={< AdminDashboard />}/>
     </Routes>
       {/* <img src={headerpic} className='image6' alt="header"/>
