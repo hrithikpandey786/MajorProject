@@ -1,5 +1,5 @@
 import React from "react"
-import pic from "./penciImage.png"
+import pic from "./pencilImage.png"
 
 export default function tableData(props){
     return (
@@ -7,7 +7,7 @@ export default function tableData(props){
             <td>{props.data.name}</td>
             <td>{props.data.rollNo}</td>
             <td>{props.data.address}</td>
-            <td>{props.data.status} <img src={pic}/></td>
+            <td>{props.data.status} <img src={pic} className="pencil-image"/></td>
         </tr>
     )
 }

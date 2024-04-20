@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Inter, sans-serif;
 }
 
 .image6{
@@ -24,6 +25,8 @@
 #studentReqText{
   font-family: Inter, sans-serif;
   font-weight: 500;
+  margin-top: 70px;
+  margin-left: 100px;
 }
 
 .admin-dash-mid-section{
@@ -43,12 +46,49 @@
   overflow: hidden; /* Needed to hide the overflow of rounded corners */
 }
 
+.student-req-mid-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+}
+
+.student-req-mid-section table{
+  /* border: 1px solid gray; */
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 1050px;
+  height: 85px;
+}
+
+.student-req-mid-section td, th{
+  border: 1px solid gray;
+  height: 10px;
+  /* font-size: 20px; */
+  text-align: left;
+  padding-left: 20px;
+  font-size: 20px;
+  /* color: grey; */
+  color: #404040;
+}
+
+.student-req-mid-section td{
+  font-weight: 500;
+}
+
+.student-req-mid-section th{
+  height: 40px;
+  font-size: 20px;
+}
+
 .admin-dash-mid-section thead{
   height: 91px;
   top: 2390px;
 }
 
-.admin-dash-mid-section th, td{
+.admin-dash-mid-section td, th{
   height: 90px;
   font-family: Inter;
   font-weight: bold;
@@ -56,7 +96,7 @@
   line-height: 35.1px;
   text-align: left;
 
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .admin-dash-mid-section td{
@@ -69,6 +109,8 @@
   /* display: inline-block; */
   /* background-clip: padding-box; */
   overflow: hidden;
+  border: none;
+  color: black;
 }
 
 .admin-dash-mid-section th:first-child{
@@ -79,5 +121,50 @@
 .admin-dash-mid-section th:last-child{
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
+}
+
+.user-account{
+  /* border: 1px solid black;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-account h3{
+  font-weight: 500;
+  margin: 5px;
+}
+
+.useraccount-pic{
+  width: 90px;
+  height: 90px;
+}
+
+.pencil-image{
+  width: 35px;
+  height: 35px;
+}
+
+.studentRequestDiv form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 1050px;
+  margin-left: 100px;
+  height: 200px;
+}
+
+.studentRequestDiv button{
+  width: 300px;
+}
+
+.studentRequestDiv input{
+  width: 400px;
+}
+.labelAndInput{
+  display: flex;
+  justify-content: space-between;
 }
 
