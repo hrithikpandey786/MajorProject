@@ -5,7 +5,7 @@ import pencilImage from "./pencilImage.png";
 export default function StudentRequestPage(){
     
     const [userData, setUserData] = React.useState({
-        name: "Anup",
+        name: "Hrithik",
         rollNo: "2022073031",
         course: "MCA",
         branch: "ITCA"
@@ -17,9 +17,23 @@ export default function StudentRequestPage(){
         contactNumber: ""
     });
 
+    function handleUserRequestData(event){
+        const fieldName=event.target.getAttribute('name');
+        const fieldValue= event.target.value;
+
+        const newRequestData = {...userRequestData};
+        newRequestData[fieldName] = fieldValue;
+
+        setUserRequestData(newRequestData);
+    }
+
+    function handleSubmitRequestData(event){
+        event.preventDefault();
+    }
+
     return (
         <div className="studentRequestDiv">
-            <img src={pic} className="image6"></img>
+            <img src={pic} className="image6" alt="mmmut"></img>
             <h2 id="studentReqText">STUDENT REQUEST PAGE</h2>
             <div className="student-req-mid-section">
                 <table>
@@ -42,45 +56,51 @@ export default function StudentRequestPage(){
                 </table>
 
                 <div className="user-account">
-                    <img src={accountpic} className="useraccount-pic"></img>
+                    <img src={accountpic} className="useraccount-pic" alt="user account pic"></img>
                     <h3>EDIT YOUR PROFILE</h3>
-                    <img src={pencilImage} className="pencil-image"></img>
+                    <img src={pencilImage} className="pencil-image" alt="pencil"></img>
                 </div>
             </div>
 
-            <form>
+            <form onSubmit={handleSubmitRequestData}>
                 <div className="labelAndInput">
                     <label htmlFor="userAddress">
-                        Enter Your Present Address:
+                        Enter Your Present Address
                     </label>
                     <input 
                         id="userAddress"
+                        name="address"
                         type="text"
                         value= {userRequestData.address}
+                        onChange={handleUserRequestData}
                     >
                     </input>
                 </div>
                 
                 <div className="labelAndInput">
                     <label htmlFor="userTransactionNum">
-                        Enter Your Transaction Number:
+                        Enter Your Transaction Number
                     </label>
                     <input 
                         id="userTransactionNum"
+                        name= "transactionNumber"
                         type="text"
                         value= {userRequestData.transactionNumber}
+                        onChange={handleUserRequestData}
                     >
                     </input>
                 </div>
 
                 <div className="labelAndInput">
                     <label htmlFor="userContactNum">
-                        Enter Your Contact Number:
+                        Enter Your Contact Number
                     </label>
                     <input 
                         id="userContactNum"
+                        name= "contactNumber"
                         type="text"
                         value= {userRequestData.contactNumber}
+                        onChange={handleUserRequestData}
                     >
                     </input>
                 

@@ -30,9 +30,9 @@ function App() {
 
     <div className="App">
       <Routes>
-      <Route path="/" element={<StudentReqPage/>}/>
-      <Route path="/admin" element={< AdminDashboard />}/>
-    </Routes>
+        <Route path="/" element={<StudentReqPage/>}/>
+        <Route path="/admin" element={< AdminDashboard />}/>
+      </Routes>
       {/* <img src={headerpic} className='image6' alt="header"/>
       <div className="mid-section">
         <h3 className="title">ADMIN DASHBOARD</h3>
