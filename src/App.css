@@ -143,6 +143,10 @@
   height: 35px;
 }
 
+.pencil-image:hover{
+  cursor: pointer;
+}
+
 .studentRequestDiv form{
   display: flex;
   justify-content: space-around;
@@ -156,14 +160,19 @@
 }
 
 .studentRequestDiv button{
-  width: 400px;
-  height: 50px;
-  margin-left: 280px;
+  width: 450px;
+  height: 55px;
+  margin-left: 300px;
   margin-top: 20px;
   background-color: black;
   border-radius: 10px;
   color: white;
   font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.studentRequestDiv button:hover{
+  cursor: pointer;
 }
 
 .studentRequestDiv input{
@@ -173,7 +182,7 @@
 }
 
 .studentRequestDiv input:focus{
-  border: 1px solid gray;
+  outline: none;
 }
 
 .labelAndInput{
