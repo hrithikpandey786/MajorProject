@@ -13,20 +13,20 @@
   height: 118px;
 }
 
-.title{
+.admin-dash-title{
   font-family: Inter;
   font-size: 27px;
   font-weight: 500;
   line-height: 32.68px;
   text-align: center;
-  margin: 25px;
+  margin-top: 60px;
 }
 
 #studentReqText{
   font-family: Inter, sans-serif;
   font-weight: 500;
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 120px;
 }
 
 .admin-dash-mid-section{
@@ -38,6 +38,7 @@
 .admin-dash-mid-section table{
   width: 1247px;
   margin-left: 209px;
+  margin-top: 15px;
   border-spacing: 0;
   border-collapse: collapse; /* Prevents double borders */
   width: 1247px; /* Full width of the container */
@@ -50,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 120px;
   margin-bottom: 30px;
   /* border: 1px solid black; */
 }
@@ -153,7 +154,7 @@
   flex-direction: column;
   /* border: 1px solid black; */
   width: 1050px;
-  margin: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 120px;
   /* line-height: 0.7; */
   padding: 0;
   height: 300px;
